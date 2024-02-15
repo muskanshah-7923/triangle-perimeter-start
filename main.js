@@ -16,6 +16,8 @@ function btnClicked() {
   let BC = dist(xBin, yBin, xCin, yCin);
   let perimeter = AB + AC + BC;
 
+  
+
   //Output
   document.getElementById("output").innerHTML = perimeter;
 }
