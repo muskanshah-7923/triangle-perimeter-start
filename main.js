@@ -14,9 +14,7 @@ function btnClicked() {
   let AB = dist(xA, xB, yA, yB);
   let AC = dist(xA, yA, xC, yC);
   let BC = dist(xB, yBin, xC, yC);
-  let perimeter = AB + AC + BC;
-
-  
+  let perimeter = (AB + AC + BC);
 
   //Output
   document.getElementById("output").innerHTML = perimeter;
