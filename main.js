@@ -16,13 +16,20 @@ function btnClicked() {
   let BC = dist(xB, yBin, xC, yC);
   let perimeter = (AB + AC + BC);
 
+  document.getElementById("output") = perimeter;
+  document.getElementById("output1") = AB;
+  document.getElementById("output2") = AC;
+  document.getElementById("output3") = BC
+
   //Output
   document.getElementById("output").innerHTML = perimeter;
 }
 
-// function dist(x1, y1, x2, y2) {
-//   let rise = y2 - y1;
-//   let run = x2 - x1;
-//   let d = Math.sqrt(run ** 2 + rise ** 2);
-//   return d;
-// }
+function dist(x1, y1, x2, y2) {
+  let rise = y2 - y1;
+  let run = x2 - x1;
+  let d = Math.sqrt(run ** 2 + rise ** 2);
+  return d;
+}
+
+
